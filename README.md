@@ -8,7 +8,7 @@
     <body>
         <h1>Formulaire HTML5 Avancé</h1>
         <h2>Formulaire HTML5 :</h2>
-
+        
         <footer style="background-color: rgb(246, 252, 255);width: auto;">
             <form action="Traitement.php">
                 <fieldset>
