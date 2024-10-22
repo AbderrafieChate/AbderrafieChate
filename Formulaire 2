@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="Formulaire HTML5">
+        <title>MON PREMIER FORMULAIRE HTML5</title>
+    </head>
+    <body>
+        <h1>Mon Premier Formulaire HTML5</h1>
+        <form method="post" action="traitement.php">
+            <fieldset>
+                <legend>Vos Coordonées</legend>
+
+                <label for="Nom">Nom :</label>
+                <input type="text" id="Nom" name="Nom"
+                    required placeholder="Votre nom"
+                ><br>
+
+                <label for="Prenom">Prénom :</label>
+                <input type="text" id="Prenom" name="Prenom"
+                    required placeholder="Votre prénom"
+                ><br>
+
+                <label for="Date">Date de naissance :</label>
+                <input type="date" id="Date" name="Date"
+                    required
+                ><br>
+
+                <label for="Mail">Mail :</label>
+                <input type="text" id="Mail" name="Mail"
+                    required placeholder="Votre mail"
+                ><br>
+
+                <label for="site">Votre Site :</label>
+                <input type="url" id="site" name="site"
+                    placeholder="http://www."
+                ><br>
+
+                <label for="Code"></label>
+                <input type="password" id="Code"
+                    placeholder="mot de Passe"
+                ><br>
+
+                <label for="Sexe"></label>
+                    <input type="radio" id="Sexe" value="Homme"
+                    >Homme<br>
+                    <input type="radio" id="Sexe" value="Femme"
+                    >Femme
+                <br>
+                
+                <input list="Pays">
+                    <option id="Pays" value="Maroc">
+                    <option id="Pays" value="France">
+                    <option id="Pays" value="Espagne">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Vos gout</legend>
+
+                <input type="checkbox" value="Pommes" name="choix1"
+                    >Pommes<br>
+                <input type="checkbox" value="Poires" name="choix2"
+                    >Poires<br>
+                <input type="checkbox" value="Scoubidous" name="choix3"
+                    >Scoubidous<br>
+
+                <textarea placeholder="Décrivez vos gouts en détail"
+                    rows="10" cols="100">
+                </textarea>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Envoyez nous votre photo</legend>
+                <label for="file"></label>
+                <input type="file" value="Choisir un fichier">
+                <input type="reset" value="Effacer">
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+    </body>
+</html>
